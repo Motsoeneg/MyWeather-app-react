@@ -11,10 +11,15 @@ export default function Weather() {
               type="search"
               placeholder="enter city.."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -26,7 +31,12 @@ export default function Weather() {
       </ul>
       <div className="row">
         <div className="col-6">
-          <h2>☀️ 6°C</h2>
+          <span className="temperature">
+            ☀️ 6
+            <a href="/" className="units">
+              °C
+            </a>
+          </span>
         </div>
         <div className="col-6">
           <ul>
