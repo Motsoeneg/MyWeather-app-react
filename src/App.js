@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="Durban" />
         <footer>
           Coded by Sinqobile, open sourced on {""}
           <a

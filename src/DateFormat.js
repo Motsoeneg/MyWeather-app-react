@@ -12,9 +12,9 @@ export default function DateFormat(props) {
   ];
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
-  if (hours < 10) hours = `01(hours)`;
+  if (hours < 10) hours = `01${hours}`;
   let minutes = props.date.getMinutes();
-  if (minutes < 10) minutes = `01(minutes)`;
+  if (minutes < 10) minutes = `01${minutes}`;
   return (
     <div>
       {day} {hours}:{minutes}
