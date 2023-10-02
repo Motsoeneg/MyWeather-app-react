@@ -1,4 +1,5 @@
 import DateFormat from "./DateFormat";
+import WeatherUnits from "./WeatherUnits";
 
 export default function WeatherInfo(props) {
   return (
@@ -14,10 +15,7 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <span className="temperature">
             <img src={props.data.iconUrl} alt="" />{" "}
-            {Math.round(props.data.temperature)}
-            <a href="/" className="units">
-              °C
-            </a>
+            <WeatherUnits celsius={props.data.temperature} />
           </span>
         </div>
         <div className="col-6">
