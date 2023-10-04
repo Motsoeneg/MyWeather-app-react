@@ -8,6 +8,11 @@
   border-radius: 4px;
 }
 
+.Weather canvas {
+  margin-right: 10px;
+  display: inline-block;
+}
+
 .Weather form {
   margin-bottom: 20px;
 }
@@ -24,7 +29,7 @@
   line-height: 19px;
 }
 
-.Weather .temperature {
+.temperature {
   font-weight: bold;
   font-size: 64px;
   line-height: 64px;
