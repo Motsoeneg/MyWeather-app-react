@@ -6,6 +6,8 @@ export default function (props) {
     "clear-sky-night": "CLEAR_NIGHT",
     "few-clouds-day": "PARTLY_CLOUDY_DAY",
     "few-clouds-night": "PARTLY_CLOUDY_NIGHT",
+    "broken-clouds-day": "CLOUDY",
+    "broken-clouds-night": "CLOUDY",
     "scattered-clouds-day": "CLOUDY",
     "scattered-clouds-night": "CLOUDY",
     "shower-rain-day": "CLOUDY",
