@@ -5,18 +5,17 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1>{props.data.city}</h1>
-      <ul>
-        <li>
-          {" "}
-          <DateFormat date={props.data.date} />
-        </li>
-        <li className="text-capitalize">{props.data.description}</li>
-      </ul>
+      <h1>{props.data.city}</h1>{" "}
+      <WeatherIcon code={props.data.icon} size="60" />{" "}
       <div className="row">
         <div className="col-6">
-          {" "}
-          <WeatherIcon code={props.data.icon} size="52" />{" "}
+          <ul>
+            <li>
+              {" "}
+              <DateFormat date={props.data.date} />
+            </li>
+            <li className="text-capitalize">{props.data.description}</li>
+          </ul>
           <div className="temperature">
             <WeatherUnits celsius={props.data.temperature} />
           </div>{" "}
