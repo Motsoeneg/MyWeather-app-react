@@ -39,7 +39,7 @@ export default function Weatherforecast(props) {
     let longitude = props.cords.longitude;
     let latidute = props.cords.latitude;
     let apiUrl = `
-https://api.shecodes.io/weather/v1/forecast?lat=${latidute}&lon=${longitude}&key=2e190051baofeb04db4bce4a3b4t041f&units=metric`;
+https://api.shecodes.io/weather/v1/forecast?lat=${latidute}&lon=${longitude}&key="fbef01f4et1b02o0d25c27210a43ef3f";&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
 
